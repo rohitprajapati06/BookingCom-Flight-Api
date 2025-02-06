@@ -1,14 +1,12 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using TourNest.Models;
 using TourNest.Models.Flight_Bookings;
-using TourNest.Models.Payment_Details;
 
 namespace TourNest.Controllers.Flights.BookingDetails
 {
@@ -22,7 +20,7 @@ namespace TourNest.Controllers.Flights.BookingDetails
         public BookingController(TourNestContext context)
         {
             _context = context;
-        }
+        
 
         // POST: api/Booking
         [HttpPost]
