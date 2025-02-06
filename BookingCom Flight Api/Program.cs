@@ -1,6 +1,5 @@
 
 using Microsoft.OpenApi.Models;
-using TourNest.Services.Flights.Book_Flights;
 using System.Text;
 using TourNest.Models;
 using TourNest.Services.Flights.Search_Flights_Locations;
@@ -13,7 +12,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddSingleton<Random>();
 
 builder.Services.AddHttpClient<SearchFlightService>();
-builder.Services.AddScoped<FlightBookingService>();
 builder.Services.AddScoped<FlightService>();
 builder.Services.AddHttpContextAccessor();
 
