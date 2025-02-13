@@ -24,9 +24,9 @@ The Flight Search API handles complex nested multiple model classes to parse the
 ## Flight Location Search
 - URL: https://localhost:7108/api/FlightLocation/search
 - Method: GET
-- Description: Searches for flight locations based on the provided query string.
+- Description: Searches for airports based on the provided query string.
 - Query String:
-    - query: The search query for flight locations. Supports searching by name, code, or partial match.
+    - query: The search query for flight locations. Supports searching by name, code, city, country or partial match.
 
 ### Example: https://localhost:7108/api/FlightLocation/search?query=New+York
 
